@@ -1,0 +1,39 @@
+/*-----------colors blue #00f red #f00 green #0f0 ----------------*/
+
+header h2{
+    color: #0f0;
+    font-size: 3rem;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.wrapper{
+    max-width: 1200px;
+    padding-left: 2%;
+}
+h1{
+    font-size: 3rem;
+    color: #00f;
+}
+
+li{
+    list-style-type: square;
+    line-height: 1.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    color: #f00;
+}
+
+p{
+    font-size: 1rem;
+    padding-left: 2%;
+    width: 40%;
+}
+
+footer{
+    background-color: #0f0;
+    text-align: center;
+    padding: 1%;
+}
