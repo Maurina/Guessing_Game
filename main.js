@@ -1,5 +1,6 @@
-let guess = 8;
-// document.getElementById('myGuess').value;
+let response = document.getElementById('myGuess').value;
+console.log(response);
+let guess = Number(response);
 console.log (guess);
 let answer = Math.floor((Math.random()*15)+1);
 console.log(answer);
@@ -7,13 +8,21 @@ numberOfGuess = 0;
 
 
 function guessingGame(){
+   //let resposeGuess = document.querySelector('results')
     if (guess < 1 || guess > 15){
-      //document.getElementById('results').innerHTML = "You must enter a number beween 1 and 15";
+        document.getElementById('results').innerHTML = "You must enter a number between 1 and 15";
+        //let outOfRange = document.createElement('p')
+        //outOfRange.textContent = "You must enter a number between 1 and 15"
+        //resposeGuess.appendChild(outOfRange)
+     
       console.log("You must enter a number between 1 and 15");
       return;
     }
     else if (guess === answer){
-       //document.getElementById('results').innerHTML = "You are correct";
+        //let correct = document.createElement('p')
+        //correct.textContent = "You are correct"
+        //resposeGuess.appendChild(correct)
+        document.getElementById('results').innerHTML = "You are correct";
             console.log("You are correct")
             switch(numberOfGuess){
                 case 1:
@@ -37,13 +46,20 @@ function guessingGame(){
 
            }
     else if (guess > answer){
-     //document.getElementById('results').innerHTML = "Your guess is too high";
+      //  let answerHigh = document.createElement('p')
+       // answerHigh.textContent = "Your guess is too high"
+       // resposeGuess.appendChild(answerHigh)
+       document.getElementById('results').innerHTML = "You are too high";
+
         console.log("You are high")
      
     }
     else {
-     //document.getElementById('results').innerHTML = "Your guess is too low";
-       console.log("You are low")
+        //let answerLow = document.createElement('p')
+        //answerLow.textContent = "Your guess is too low"
+        //resposeGuess.appendChild(answerLow)
+        document.getElementById('results').innerHTML = "You are too low";
+        console.log("You are low")
       
     }
     
