@@ -1,4 +1,4 @@
-/*-----------colors blue #00f red #f00 green #0f0 ----------------*/
+
 
 header{
     background-image: url(images/dice.jpg);
@@ -44,6 +44,14 @@ p{
     font-size: 1rem;
     padding-left: 2%;
     width: 40%;
+}
+
+#results{
+    padding-bottom: 2%;
+}
+
+#tries{
+    padding-bottom: 2%;
 }
 
 footer{
