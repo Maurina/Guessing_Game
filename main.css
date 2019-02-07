@@ -3,6 +3,7 @@
 header{
     background-image: url(images/dice.jpg);
     height: 450px;
+
 }
 
 
@@ -16,7 +17,8 @@ header h2{
 
 .wrapper{
     max-width: 1200px;
-    padding-left: 2%;
+ 
+    margin: 0 auto;
 }
 h1{
     font-size: 3rem;
@@ -45,13 +47,18 @@ p{
     padding-left: 2%;
     width: 40%;
 }
+span{
+    padding-left:2%;
+}
 
 #results{
     padding-bottom: 2%;
+    padding-left:2%;
 }
 
 #tries{
     padding-bottom: 2%;
+    padding-left:2%;
 }
 
 footer{

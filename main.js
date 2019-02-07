@@ -5,13 +5,13 @@ console.log(answer);
 
 let guess;
 
-
+let numberOfGuess = 0;
   
 
 function guessingGame(){
  //input guess from user------------------------------------------
     guess = document.getElementById('myGuess').value;
-    let numberOfGuess = 0;
+
     console.log (guess);
 // check if input is between 1-15---------------------------------
     if (guess < 1 || guess > 15){
@@ -47,7 +47,7 @@ function guessingGame(){
                 break;
                 default:
                 let awardImageGold = document.createElement("img");
-                awardImageGold.scr  = "images/gold.png";
+                awardImageGold.src = "images/gold.png"
                 document.getElementById('Award').appendChild(awardImageGold);
             }//end switch
         
